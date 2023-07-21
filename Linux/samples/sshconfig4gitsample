@@ -1,0 +1,4 @@
+Host github.com
+    User git
+    PubkeyAcceptedKeyTypes +ssh-rsa
+    ForwardAgent yes

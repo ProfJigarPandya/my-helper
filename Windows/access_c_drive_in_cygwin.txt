@@ -1,0 +1,3 @@
+cd /cygdrive/c
+
+cd /cygdrive/c/Users/Admin/Desktop/
