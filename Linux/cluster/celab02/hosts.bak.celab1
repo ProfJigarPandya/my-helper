@@ -1,0 +1,43 @@
+127.0.0.1	localhost
+127.0.1.1	celab1-Veriton-M200-P500
+
+# The following lines are desirable for IPv6 capable hosts
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+# Added by Docker Desktop
+# To allow the same kube context to work on the host and the container:
+127.0.0.1	kubernetes.docker.internal
+# End of section
+192.168.26.11 hadoop-clone-11
+192.168.26.12 hadoop-clone-12
+192.168.26.13 hadoop-clone-13
+192.168.26.14 hadoop-clone-14
+192.168.26.15 hadoop-clone-15
+192.168.26.16 hadoop-clone-16
+192.168.26.17 hadoop-clone-17
+192.168.26.18 hadoop-clone-18
+192.168.26.19 hadoop-clone-19
+192.168.26.20 hadoop-clone-20
+192.168.26.21 hadoop-clone-21
+192.168.26.22 hadoop-clone-22
+192.168.26.23 hadoop-clone-23
+192.168.26.24 hadoop-clone-24
+192.168.26.25 hadoop-clone-25
+192.168.26.26 hadoop-clone-26
+192.168.26.27 hadoop-clone-27
+192.168.26.28 hadoop-clone-28
+192.168.26.29 hadoop-clone-29
+192.168.26.30 hadoop-clone-30
+192.168.26.31 hadoop-clone-31
+192.168.26.32 hadoop-clone-32
+192.168.26.33 hadoop-clone-33
+192.168.26.34 hadoop-clone-34
+192.168.26.35 hadoop-clone-35
+192.168.26.36 hadoop-clone-36
+192.168.26.37 hadoop-clone-37
+192.168.26.38 hadoop-clone-38
+192.168.26.39 hadoop-clone-39
+192.168.26.40 hadoop-clone-40
