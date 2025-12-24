@@ -1,5 +1,5 @@
 subnet=192.168.29
-for ip in $(seq 1 60);
+for ip in $(seq 11 40);
 do 
 	if [ $ip -eq 999 -o $ip -eq 1000 ]
 	then

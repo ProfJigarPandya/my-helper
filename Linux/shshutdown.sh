@@ -1,8 +1,8 @@
-subnet=192.168.29
+subnet=192.168.26
 rootpass=test
 for ip in $(seq 11 40);
 do 
-	if [ $ip -eq 254-o $ip -eq 255 ]
+	if [ $ip -eq 254 -o $ip -eq 255 ]
 	then
 		continue
 	fi
