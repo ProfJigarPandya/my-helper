@@ -1,0 +1,59 @@
+127.0.0.1 localhost
+127.0.1.1 celab3-ThinkCentre-neo-50s-Gen-3
+
+# The following lines are desirable for IPv6 capable hosts
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+# Added by Docker Desktop
+# To allow the same kube context to work on the host and the container:
+127.0.0.1	kubernetes.docker.internal
+# End of section
+192.168.27.11 hadoop-clone-celab03-11
+192.168.27.12 hadoop-clone-celab03-12
+192.168.27.13 hadoop-clone-celab03-13
+192.168.27.14 hadoop-clone-celab03-14
+192.168.27.15 hadoop-clone-celab03-15
+192.168.27.16 hadoop-clone-celab03-16
+192.168.27.17 hadoop-clone-celab03-17
+192.168.27.18 hadoop-clone-celab03-18
+192.168.27.19 hadoop-clone-celab03-19
+192.168.27.20 hadoop-clone-celab03-20
+192.168.27.21 hadoop-clone-celab03-21
+192.168.27.22 hadoop-clone-celab03-22
+192.168.27.23 hadoop-clone-celab03-23
+192.168.27.24 hadoop-clone-celab03-24
+192.168.27.25 hadoop-clone-celab03-25
+192.168.27.26 hadoop-clone-celab03-26
+192.168.27.27 hadoop-clone-celab03-27
+192.168.27.28 hadoop-clone-celab03-28
+192.168.27.29 hadoop-clone-celab03-29
+192.168.27.30 hadoop-clone-celab03-30
+192.168.27.31 hadoop-clone-celab03-31
+192.168.27.32 hadoop-clone-celab03-32
+192.168.27.33 hadoop-clone-celab03-33
+192.168.27.34 hadoop-clone-celab03-34
+192.168.27.35 hadoop-clone-celab03-35
+192.168.27.36 hadoop-clone-celab03-36
+192.168.27.37 hadoop-clone-celab03-37
+192.168.27.38 hadoop-clone-celab03-38
+192.168.27.39 hadoop-clone-celab03-39
+192.168.27.40 hadoop-clone-celab03-40
+192.168.27.41 hadoop-clone-celab03-41
+192.168.27.42 hadoop-clone-celab03-42
+192.168.27.43 hadoop-clone-celab03-43
+192.168.27.44 hadoop-clone-celab03-44
+192.168.27.45 hadoop-clone-celab03-45
+192.168.27.46 hadoop-clone-celab03-46
+192.168.27.47 hadoop-clone-celab03-47
+192.168.27.48 hadoop-clone-celab03-48
+192.168.27.49 hadoop-clone-celab03-49
+192.168.27.50 hadoop-clone-celab03-50
+192.168.27.51 hadoop-clone-celab03-51
+192.168.27.52 hadoop-clone-celab03-52
+192.168.27.53 hadoop-clone-celab03-53
+192.168.27.54 hadoop-clone-celab03-54
+192.168.27.55 hadoop-clone-celab03-55
+192.168.27.56 hadoop-clone-celab03-56
