@@ -1,0 +1,54 @@
+cp -R celab02 celab03
+sed -i 's/192.168.26/192.168.27/g' *.sh ./hosts
+grep -r "{11..*}" .
+sed -i "s/{11..58}/{11..56}/g" *.sh
+sed -r -i 's/celab02/celab03/g' *.sh ./conf/*.xml ./hosts ./conf/workers 
+#permit root access ssh remotely. This has to be done physically on nodes and not remotely using scripts with root itself as its not permitted. Manual steps involved.
+
+#Allow root login remotely via ssh to further setup
+step01_permit_ssh_root.sh
+
+#Replace test with root password in 
+vi step02_disable_firewall_root.sh step03_hostnames_root.sh step05_sync_etc_hosts_root.sh
+
+#Disable firewall to have internal rpc
+step02_disable_firewall_root.sh
+
+#Set hostnames as per cluster details
+step03_hostnames_root.sh
+
+#Generate etc/hosts here locally and sync to all hosts.
+scp hadoop@192.168.27.11:/etc/hosts hosts.bak
+step04_generate_etc_hosts_local.sh
+step05_sync_etc_hosts_root.sh
+
+
+#revert root password to test 
+vi step02_disable_firewall_root.sh step03_hostnames_root.sh step05_sync_etc_hosts_root.sh
+
+#Modify/Verify local copies of configuration files with master details within conf folder and list of workers
+
+#Replace hadoop user password from tset to actual
+vi step07_sync_hadoop_conf.sh step08_cleanup_hadoop.sh step09_format_hadoop.sh step10_start_name_and_datanodes.sh step11_stop_datanodes_and_name.sh
+
+#Generate workers file as per list of workers ip locally
+step06_generate_workers_list.sh
+
+
+#Sync local hadoop configuration files to all nodes
+step07_sync_hadoop_conf.sh
+
+step08_cleanup_hadoop.sh
+
+#Format namenode on cluster master. Edit the file to fix the ip of master
+step09_format_hadoop.sh
+
+step10_start_name_and_datanodes.sh
+
+step11_stop_datanodes_and_name.sh
+
+#revert hadoop password to tset
+vi step07_sync_hadoop_conf.sh step08_cleanup_hadoop.sh step09_format_hadoop.sh step10_start_name_and_datanodes.sh step11_stop_datanodes_and_name.sh
+
+
+
